@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="source.xml" url="https://github.com/jdukosse/snorting_orge_homebrew/blob/main/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_orge_homebrew/main/source.xml" />
 		</update>
 	</info>
     <element name="Snorting Ogre Homebrew" type="Source" source="Homebrew" id="ID_SO_SOURCE_HOMEBREW">

@@ -3,13 +3,13 @@
 	<info>
 		<name>Snorting Orge Homebrew content</name>
 		<description>Additional content created for the campaigns of the Snorting Ogre adventuring groups</description>
-		<author url="none">jdukosse</author>
+		<author url="https://github.com/jdukosse">jdukosse</author>
 		<update version="0.0.1">
 			<file name="snorting-ogre.index" url="https://github.com/jdukosse/snorting_orge_homebrew/blob/main/snorting-ogre.index" />
 		</update>
 	</info>
 	<files>
-        <file name="source.xml" url=https://github.com/jdukosse/snorting_orge_homebrew/blob/main/source.xml />
+        <file name="source.xml" url="https://github.com/jdukosse/snorting_orge_homebrew/blob/main/source.xml" />
 		<file name="druid-leaf.xml" url="https://github.com/jdukosse/snorting_orge_homebrew/blob/main/druid-leaf.xml" />
 		<file name="items-armor.xml" url="https://github.com/jdukosse/snorting_orge_homebrew/blob/main/items-armor.xml" />
 		<file name="items-rings.xml" url="https://github.com/jdukosse/snorting_orge_homebrew/blob/main/items-rings.xml" />

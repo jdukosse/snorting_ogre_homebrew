@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="source.xml" url="https://github.com/jdukosse/snorting_orge_homebrew/source.xml" />
+			<file name="source.xml" url="https://github.com/jdukosse/snorting_orge_homebrew/blob/main/source.xml" />
 		</update>
 	</info>
     <element name="Snorting Ogre Homebrew" type="Source" source="Homebrew" id="ID_SO_SOURCE_HOMEBREW">
@@ -11,7 +11,7 @@
 		</description>
 		<setters>
 			<set name="abbreviation">SOH</set>
-			<set name="url">none</set>
+			<set name="url">https://github.com/jdukosse/snorting_orge_homebrew</set>
 			<set name="author" abbreviation="SO" url="none">jdukosse</set>
 			<set name="official">false</set>
 			<set name="supplement">true</set>

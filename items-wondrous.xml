@@ -5,7 +5,7 @@
 		<description></description>
 		<author>Homebrew</author>
 		<update version="1.0.0">
-			<file name="items-wondrous.xml" url="local-only"/>
+			<file name="items-wondrous.xml" url="https://github.com/jdukosse/snorting_orge_homebrew/blob/main/items-wondrous.xml"/>
 		</update>
 	</info>
 	<element name="Gloves of Beligerent Skies" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_GLOVES_OF_BELIGERENT_SKIES">

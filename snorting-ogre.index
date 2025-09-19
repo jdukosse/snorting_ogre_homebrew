@@ -11,9 +11,11 @@
 	<files>
         <file name="source.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/source.xml" />
 		<file name="druid-leaf.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/druid-leaf.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/feats.xml" />
 		<file name="items-armor.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-armor.xml" />
 		<file name="items-rings.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-rings.xml" />
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-weapons.xml" />
 		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-wondrous.xml" />
+		<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/optional-class-features.xml" />
 	</files>
 </index>

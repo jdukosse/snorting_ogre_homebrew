@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Optional Class Features</name>
+		<description>Optional Class Features from Snorting Ogre Homebrew</description>
+		<author url="https://github.com/jdukosse/snorting_ogre_homebrew">jdukosse</author>
+		<update version="0.0.1">
+			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/optional-class-features.xml" />
+		</update>
+	</info>
+
+	<!-- Bard -->
+	<!-- Song of Disruption -->
+	<element name="Song of Disruption" type="Class Feature" source="Snorting Ogre Homebrew" id="ID_SO_CLASS_FEATURE_BARD_SONG_OF_DISRUPTION">
+		<description>
+			<p><i>1st-level bard feature</i></p>
+			<p>You gain the ability to use the discordant notes you have learned to disrupt another spellcaster. As a reaction you can expend one use of your Bardic Inspiration to counter a spell being cast. Roll your Bardic Inspiration die + 8 against a DC of 10 plus the level of the spell being cast.</p>
+		</description>
+		<sheet action="Reaction" usage="Bardic Inspiration">
+			<description>As a reaction you can expend one use of your Bardic Inspiration to counter a spell being cast. Roll your Bardic Inspiration die + 8 against a DC of 10 plus the level of the spell being cast.</description>
+		</sheet>
+		<rules>
+			<!-- No additional mechanical rules needed beyond the description -->
+		</rules>
+	</element>
+
+	<element name="Bard, LV01: Song of Disruption" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_BARD_SONG_OF_DISRUPTION">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SO_CLASS_FEATURE_BARD_SONG_OF_DISRUPTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">first level, 1st level, bardic inspiration, counterspell, reaction</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_BARD_SONG_OF_DISRUPTION" requirements="[level:bard:1]"/>
+		</rules>
+	</element>
+
+	<!-- Song of Suppression -->
+	<element name="Song of Suppression" type="Class Feature" source="Snorting Ogre Homebrew" id="ID_SO_CLASS_FEATURE_BARD_SONG_OF_SUPPRESSION">
+		<description>
+			<p><i>1st-level bard feature</i></p>
+			<p>By singing the counter melody you learned while studying the box you can briefly suppress any magical effects in an area. For 1 minute all permanent magical effects in a 10 ft area around you are suppressed. You can use this ability a number of times equal to your Charisma modifier per long rest.</p>
+		</description>
+		<sheet usage="{{charisma:modifier}}/Long Rest">
+			<description>For 1 minute all permanent magical effects in a 10 ft area around you are suppressed. ({{charisma:modifier}} uses per long rest)</description>
+		</sheet>
+		<rules>
+			<!-- No additional mechanical rules needed beyond the description -->
+		</rules>
+	</element>
+
+	<element name="Bard, LV01: Song of Suppression" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_BARD_SONG_OF_SUPPRESSION">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SO_CLASS_FEATURE_BARD_SONG_OF_SUPPRESSION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">first level, 1st level, suppression, antimagic, area effect</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_BARD_SONG_OF_SUPPRESSION" requirements="[level:bard:1]"/>
+		</rules>
+	</element>
+
+	<!-- Druid -->
+	<!-- Circle of Wildfire -->
+	<!-- Residual Warmth -->
+	<element name="Residual Warmth" type="Class Feature" source="Snorting Ogre Homebrew" id="ID_SO_CLASS_FEATURE_DRUID_WILDFIRE_RESIDUAL_WARMTH">
+		<description>
+			<p><i>2nd-level Circle of Wildfire druid feature</i></p>
+			<p>Once per turn, when you cast a spell that deals fire damage you can grant temporary hit points equal to your Wisdom modifier to a friendly creature within 10 feet of you or your wildfire spirit. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>Once per turn, when you cast a spell that deals fire damage you can grant temporary hit points equal to {{wisdom:modifier}} to a friendly creature within 10 feet of you or your wildfire spirit. ({{proficiency}} uses per long rest)</description>
+		</sheet>
+		<rules>
+			<!-- No additional mechanical rules needed beyond the description -->
+		</rules>
+	</element>
+
+	<element name="Circle of Wildfire, LV02: Residual Warmth" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_DRUID_WILDFIRE_RESIDUAL_WARMTH">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SO_CLASS_FEATURE_DRUID_WILDFIRE_RESIDUAL_WARMTH" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">second level, 2nd level, fire damage, temporary hit points, wildfire spirit</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_DRUID_WILDFIRE_RESIDUAL_WARMTH" requirements="[level:druid:2],[druid:archetype:circle of wildfire]"/>
+		</rules>
+	</element>
+
+	<!-- Ranger -->
+	<!-- Beast Master -->
+	<!-- Master of Pets -->
+	<element name="Master of Pets" type="Class Feature" source="Snorting Ogre Homebrew" id="ID_SO_CLASS_FEATURE_RANGER_BEASTMASTER_MASTER_OF_PETS">
+		<description>
+			<p><i>3rd-level Beast Master ranger feature</i></p>
+			<p>As a bonus action you can command all of the creatures under your control, instead of just one. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can command all of the creatures under your control, instead of just one. ({{proficiency}} uses per long rest)</description>
+		</sheet>
+		<rules>
+			<!-- No additional mechanical rules needed beyond the description -->
+		</rules>
+	</element>
+
+	<element name="Beast Master, LV03: Master of Pets" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_RANGER_BEASTMASTER_MASTER_OF_PETS">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SO_CLASS_FEATURE_RANGER_BEASTMASTER_MASTER_OF_PETS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">third level, 3rd level, beast master, bonus action, multiple creatures, companion</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_RANGER_BEASTMASTER_MASTER_OF_PETS" requirements="[level:ranger:3],[ranger:archetype:beast master]"/>
+		</rules>
+	</element>
+
+	<!-- Circle of the Leaf -->
+	<!-- Revitalize -->
+	<element name="Revitalize" type="Class Feature" source="Snorting Ogre Homebrew" id="ID_SO_CLASS_FEATURE_DRUID_LEAF_REVITALIZE">
+		<description>
+			<p><i>3rd-level Circle of the Leaf druid feature</i></p>
+			<p>You gain an additional way to cast the Plant Growth spell. When you cast the spell over 1 minute you revitalize the surrounding ecosystem. All normal plants in a 100-foot radius centered on you are immediately cured of disease, and dead or withered plants spring back to life with new growth. Trees bud with fresh leaves, blossoms unfurl, and fruit begins to ripen early. The area becomes a verdant sanctuary, filled with gentle life energy.</p>
+			<p class="indent">As part of this casting, you may choose one of the following effects, which lasts for 1 hour within the area:</p>
+			<ul>
+				<li><strong>Balm of the Blooming Bough:</strong> All healing spells you cast within the area restore additional hit points equal to your proficiency bonus.</li>
+				<li><strong>Thornhide Sanctuary:</strong> You may choose up to a number of creatures equal to your proficiency bonus within the area. Each gains a +2 bonus to AC as their skin is lightly reinforced with barklike patterns or floral shielding.</li>
+				<li><strong>Verdant Ward:</strong> Choose one elemental damage type (acid, cold, fire, lightning, or thunder). All living creatures within the area gain resistance to that damage type, protected by the latent energy of awakened flora responding to your presence.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain an additional way to cast the Plant Growth spell. When you cast the spell over 1 minute you revitalize the surrounding ecosystem in a 100-foot radius. Choose one effect that lasts for 1 hour: Balm of the Blooming Bough (healing spells restore +{{proficiency}} hp), Thornhide Sanctuary (up to {{proficiency}} creatures gain +2 AC), or Verdant Ward (choose elemental damage type for resistance).</description>
+		</sheet>
+		<rules>
+			<!-- No additional mechanical rules needed beyond the description -->
+		</rules>
+	</element>
+
+	<element name="Circle of the Leaf, LV03: Revitalize" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_DRUID_LEAF_REVITALIZE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SO_CLASS_FEATURE_DRUID_LEAF_REVITALIZE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">third level, 3rd level, plant growth, healing, ecosystem, sanctuary</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_DRUID_LEAF_REVITALIZE" requirements="[level:druid:3],[druid:archetype:circle of the leaf]"/>
+		</rules>
+	</element>
+
+	<!-- Swarmkeeper -->
+	<!-- Baalzebul's Blessing -->
+	<element name="Baalzebul's Blessing" type="Class Feature" source="Snorting Ogre Homebrew" id="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_BAALZEBULS_BLESSING">
+		<description>
+			<p><i>3rd-level Swarmkeeper ranger feature</i></p>
+			<p>When you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>When you reduce a hostile creature to 0 hit points, you gain {{wisdom:modifier}}+{{proficiency}} temporary hit points.</description>
+		</sheet>
+		<rules>
+			<!-- No additional mechanical rules needed beyond the description -->
+		</rules>
+	</element>
+
+	<element name="Swarmkeeper, LV03: Baalzebul's Blessing" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_RANGER_SWARMKEEPER_BAALZEBULS_BLESSING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_BAALZEBULS_BLESSING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">third level, 3rd level, swarmkeeper, temporary hit points, kill</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_BAALZEBULS_BLESSING" requirements="[level:ranger:3],[ranger:archetype:swarmkeeper]"/>
+		</rules>
+	</element>
+
+	<!-- Beguiling Influence -->
+	<element name="Beguiling Influence" type="Class Feature" source="Snorting Ogre Homebrew" id="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_BEGUILING_INFLUENCE">
+		<description>
+			<p><i>3rd-level Swarmkeeper ranger feature</i></p>
+			<p>You gain proficiency in the Deception and Persuasion skills.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in the Deception and Persuasion skills.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+
+	<element name="Swarmkeeper, LV03: Beguiling Influence" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_RANGER_SWARMKEEPER_BEGUILING_INFLUENCE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_BEGUILING_INFLUENCE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">third level, 3rd level, swarmkeeper, deception, persuasion, skills</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_BEGUILING_INFLUENCE" requirements="[level:ranger:3],[ranger:archetype:swarmkeeper]"/>
+		</rules>
+	</element>
+
+	<!-- Master of the Swarm -->
+	<element name="Master of the Swarm" type="Class Feature" source="Snorting Ogre Homebrew" id="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_MASTER_OF_THE_SWARM">
+		<description>
+			<p><i>3rd-level Swarmkeeper ranger feature</i></p>
+			<p>Your Gathered Swarm deals poison damage equal to your Wisdom modifier when you hit a creature with an attack.</p>
+		</description>
+		<sheet>
+			<description>Your Gathered Swarm deals {{wisdom:modifier}} poison damage when you hit a creature with an attack.</description>
+		</sheet>
+		<rules>
+			<!-- No additional mechanical rules needed beyond the description -->
+		</rules>
+	</element>
+
+	<element name="Swarmkeeper, LV03: Master of the Swarm" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_RANGER_SWARMKEEPER_MASTER_OF_THE_SWARM">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_MASTER_OF_THE_SWARM" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">third level, 3rd level, swarmkeeper, gathered swarm, poison damage</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_MASTER_OF_THE_SWARM" requirements="[level:ranger:3],[ranger:archetype:swarmkeeper]"/>
+		</rules>
+	</element>
+
+	<!-- Tide Step -->
+	<element name="Tide Step" type="Class Feature" source="Snorting Ogre Homebrew" id="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_TIDE_STEP">
+		<description>
+			<p><i>7th-level Swarmkeeper ranger feature</i></p>
+			<p>You gain an additional way to use your Writhing Tide ability. As a bonus action you can send your swarm up to 30 feet away from you to an unoccupied space that you can see and teleport over to that location.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can send your swarm up to 30 feet away from you to an unoccupied space that you can see and teleport over to that location. (Additional use of Writhing Tide ability)</description>
+		</sheet>
+		<rules>
+			<!-- No additional mechanical rules needed beyond the description -->
+		</rules>
+	</element>
+
+	<element name="Swarmkeeper, LV07: Tide Step" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_RANGER_SWARMKEEPER_TIDE_STEP">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_TIDE_STEP" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">seventh level, 7th level, swarmkeeper, writhing tide, teleport, bonus action</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_TIDE_STEP" requirements="[level:ranger:7],[ranger:archetype:swarmkeeper]"/>
+		</rules>
+	</element>
+
+</elements>

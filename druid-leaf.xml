@@ -3,7 +3,7 @@
 	<info>
 		<name>Circle of the Leaf</name>
 		<description>Circle of the Leaf - Homebrew Druid Subclass</description>
-		<author>Converted from Circle of the Leaf.docx</author>
+		<author>jdukosse</author>
 		<update version="0.0.1">
 			<file name="druid-leaf.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/druid-leaf.xml" />
 		</update>

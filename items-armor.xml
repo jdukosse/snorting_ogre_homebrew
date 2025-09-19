@@ -3,7 +3,7 @@
 	<info>
 		<name>Armor</name>
 		<description></description>
-		<author>Homebrew</author>
+		<author>jdukosse</author>
 		<update version="1.0.0">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-armor.xml" />
 		</update>

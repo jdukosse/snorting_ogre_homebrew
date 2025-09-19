@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from Snorting Ogre Homebrew</description>
+		<author url="https://github.com/jdukosse/snorting_ogre_homebrew">jdukosse</author>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Master Brewer" type="Feat" source="Snorting Ogre Homebrew" id="ID_SO_FEAT_MASTER_BREWER">
+		<description>
+			<p>Time and effort spent mastering the arts of brewing and distilling has paid off, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution or Wisdom score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency with brewer's supplies if you don't already have it.</li>
+				<li>As part of a short rest, you can brew a special drink, provided you have ingredients and brewer's supplies on hand. You can prepare enough of this drink for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who drinks it and spends one or more Hit Dice to regain hit points regains an extra 1d8 hit points.</li>
+				<li>With one hour of work or when you finish a long rest, you can brew a number of flagons equal to your proficiency bonus. These flagons last 8 hours after being made. A creature can use a bonus action to drink one of those flagons to gain temporary hit points equal to your proficiency bonus.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>As part of a short rest, you can brew a special drink provided you have ingredients and brewer's supplies on hand. You can prepare enough of this drink for {{master brewer:creatures}} creatures. At the end of the short rest, any creature who drinks it and spends one or more Hit Dice to regain hp regains an extra 1d8 hp. &#13;
+			With one hour of work or when you finish a long rest, you can brew {{proficiency}} flagons. These flagons last 8 hours after being made. A creature can use a bonus action to drink one of those flagons to gain {{proficiency}} temporary hp.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase, Master Brewer" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
+			<stat name="master brewer:creatures" value="4" />
+			<stat name="master brewer:creatures" value="proficiency" />
+		</rules>
+	</element>
+
+</elements>

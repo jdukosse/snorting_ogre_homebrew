@@ -5,7 +5,7 @@
     <description></description>
     <author>Homebrew</author>
     <update version="1.0.0">
-      <file name="items-rings.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-rings.xml"/>
+      <file name="items-rings.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-rings.xml" />
     </update>
   </info>
   <element name="Band of the Mystic Scoundrel" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_BAND_OF_THE_MYSTIC_SCOUNDREL">

@@ -11,6 +11,7 @@
 		</description>
 		<setters>
 			<set name="abbreviation">SOH</set>
+			<set name="url">none</set>
 			<set name="author" abbreviation="SO" url="none">jdukosse</set>
 			<set name="official">false</set>
 			<set name="supplement">true</set>

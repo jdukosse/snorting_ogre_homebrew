@@ -5,7 +5,7 @@
 		<description></description>
 		<author>Homebrew</author>
 		<update version="1.0.0">
-			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_orge_homebrew/main/items-weapons.xml"/>
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-weapons.xml"/>
 		</update>
 	</info>
 	<element name="Bow of the Banshee" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_BOW_OF_THE_BANSHEE">

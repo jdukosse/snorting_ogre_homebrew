@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<description></description>
+		<author>Homebrew</author>
+		<update version="1.0.0">
+			<file name="items-weapons.xml" url="local-only"/>
+		</update>
+	</info>
+	<element name="Bow of the Banshee" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_BOW_OF_THE_BANSHEE">
+		<description>
+            <p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">When you hit a creature with a ranged attack using this weapon, you can force the target to make a DC 15 Wisdom saving throw. On a failed save, the target is Frightened of you until the end of your next turn. In addition, you gain an extra +2 bonus to attack and damage rolls against creatures that are Frightened.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any ranged">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of the Banshee</set>
+		</setters>
+	</element>
+</elements>

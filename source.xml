@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://github.com/jdukosse/snorting_orge_homebrew/source.xml" />
+		</update>
+	</info>
+    <element name="Snorting Ogre Homebrew" type="Source" source="Homebrew" id="ID_SO_SOURCE_HOMEBREW">
+		<description>
+			<p><strong>All of the additional created for the campaigns of the Snorting Ogre adventuring groups.</strong></p>
+		</description>
+		<setters>
+			<set name="abbreviation">SOH</set>
+			<set name="author" abbreviation="SO" url="none">jdukosse</set>
+			<set name="official">false</set>
+			<set name="supplement">true</set>
+			<set name="release">20250919</set>
+		</setters>
+	</element>
+</elements>

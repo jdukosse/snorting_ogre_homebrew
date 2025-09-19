@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Rings</name>
+    <description></description>
+    <author>Homebrew</author>
+    <update version="1.0.0">
+      <file name="items-rings.xml" url="local-only"/>
+    </update>
+  </info>
+  <element name="Band of the Mystic Scoundrel" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_BAND_OF_THE_MYSTIC_SCOUNDREL">
+    <description>
+      <p>After hitting a creature with a weapon attack, you can cast illusion or enchantment spells as a <b>Bonus Action</b>.</p>
+    </description>
+    <setters>
+      <set name="category">Rings</set>
+      <set name="type">Ring</set>
+      <set name="slot">ring</set>
+      <set name="attunement">true</set>
+      <set name="rarity">Uncommon</set>
+    </setters>
+  </element>
+  <element name="Ring of Salving" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_RING_OF_SALVING">
+    <description>
+      <p>Whenever you heal another creature, that creature regains 2 additional hit points.</p>
+    </description>
+    <setters>
+      <set name="category">Rings</set>
+      <set name="type">Ring</set>
+      <set name="slot">ring</set>
+      <set name="attunement">true</set>
+      <set name="rarity">Uncommon</set>
+    </setters>
+  </element>
+  <element name="Ring of Fire Acuity" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_RING_OF_FIRE_ACUITY">
+    <description>
+      <p>Whenever you deal Fire damage, you gain Arcane Acuity.</p>
+      <p><b>Fire Acuity:</b> Whenever you deal Fire damage, you gain a +1 bonus to your spell attack rolls and spell save DC until the end of your next turn.</p>
+    </description>
+    <setters>
+      <set name="category">Rings</set>
+      <set name="type">Ring</set>
+      <set name="slot">ring</set>
+      <set name="attunement">true</set>
+      <set name="rarity">Uncommon</set>
+    </setters>
+  </element>
+</elements>

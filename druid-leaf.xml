@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of the Leaf</name>
+		<description>Circle of the Leaf - Homebrew Druid Subclass</description>
+		<author>Converted from Circle of the Leaf.docx</author>
+		<update version="0.0.1">
+			<file name="druid-leaf.xml" url="local-only" />
+		</update>
+	</info>
+	<element name="Circle of the Leaf" type="Archetype" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_DRUID_CIRCLE_OF_LEAF">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of the Leaf embody nature’s patient hand, guiding the wilderness toward harmony without force or destruction. Leaftenders gently shape the wild, coaxing balance through care and wisdom.</p>
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_CIRCLE_SPELLS" />
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_TENDER_OF_THE_GREEN" />
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_VERDANT_GUARDIAN" />
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_KEEPER_OF_THE_WILD" />
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_SHELTER_OF_THE_GROVE" />
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_GUARDIANS_EMBRACE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_CIRCLE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_TENDER_OF_THE_GREEN" level="2" />
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_VERDANT_GUARDIAN" level="2" />
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_KEEPER_OF_THE_WILD" level="6" />
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_SHELTER_OF_THE_GROVE" level="10" />
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_GUARDIANS_EMBRACE" level="14" />
+		</rules>
+	</element>
+	<element name="Circle Spells" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_CIRCLE_SPELLS">
+		<description>
+			<p><em>2nd-level Circle of the Leaf feature</em></p>
+			<p>Starting at 2nd level, you gain access to the following Circle Spells. These spells are always prepared and do not count against the number of spells you can prepare each day.</p>
+			<table>
+				<thead><tr><td>Druid Level</td><td>Spell</td></tr></thead>
+				<tr><td>2nd</td><td><em>Sanctuary</em></td></tr>
+				<tr><td>3rd</td><td><em>Warding Bond</em></td></tr>
+				<tr><td>5th</td><td><em>Aura of Vitality</em></td></tr>
+				<tr><td>7th</td><td><em>Guardian of Nature</em></td></tr>
+				<tr><td>9th</td><td><em>Greater Restoration</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You gain access to specific spells as you level up.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGE_SPELL_AURA_OF_VITALITY" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGE_SPELL_GUARDIAN_OF_NATURE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Tender of the Green" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_TENDER_OF_THE_GREEN">
+		<description>
+			<p><em>2nd-level Circle of the Leaf feature</em></p>
+			<ul>
+				<li><b>Bonus Proficiencies:</b> You gain proficiency in Herbalism Kit and Survival. If you are already proficient in Survival, your proficiency bonus is doubled for checks made to track creatures, find food and water, or navigate through natural terrain.</li>
+				<li><b>Natural Insight:</b> You can identify plants, animals, and sources of pure water with perfect accuracy. You automatically recognize whether a plant is edible, poisonous, or medicinal, whether an animal is native or unnatural to an area, and whether a water source is safe to drink.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Verdant Guardian" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_VERDANT_GUARDIAN">
+		<description>
+			<p><em>2nd-level Circle of the Leaf feature</em></p>
+			<p>As an action, you expend one use of Wild Shape to summon a Verdant Guardian in an unoccupied space within 30 feet of you. The guardian lasts for 1 hour or until you dismiss it as a bonus action. The guardian is a Medium spectral entity, intangible, and does not occupy its space.</p>
+			<ul>
+				<li><b>Defensive Presence:</b> When a creature within 10 feet of the guardian is hit by an attack, you can use your reaction to grant that creature resistance to the attack’s damage.</li>
+				<li><b>Sustained Nurturing:</b> When a creature within 10 feet of the guardian regains hit points from a spell or ability, they regain additional hit points equal to your Wisdom modifier (minimum of 1).</li>
+				<li><b>Guided Movement:</b> As a bonus action, you can move the guardian up to 30 feet to an unoccupied space you can see.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Keeper of the Wild" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_KEEPER_OF_THE_WILD">
+		<description>
+			<p><em>6th-level Circle of the Leaf feature</em></p>
+			<ul>
+				<li><b>Tread Softly:</b> You can move through nonmagical difficult terrain without expending extra movement, and you do not leave behind tracks or other signs of passage unless you choose to.</li>
+				<li><b>Heart of the Wild:</b> You have advantage on saving throws against being charmed by fey and beasts, and you are immune to charm effects from woodland creatures, such as dryads, pixies, and nixies.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Shelter of the Grove" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_SHELTER_OF_THE_GROVE">
+		<description>
+			<p><em>10th-level Circle of the Leaf feature</em></p>
+			<p>When you summon your Verdant Guardian, it has the following enhancements:</p>
+			<ul>
+				<li><b>Bastion of Bark and Bloom:</b> The guardian’s protective aura extends to 20 feet instead of 10 feet. Additionally, creatures in the area gain temporary hit points equal to your Wisdom modifier at the start of their turn.</li>
+				<li><b>Renewal’s Embrace:</b> When an ally within 20 feet of the guardian drops to 0 hit points but is not killed outright, the guardian dissolves into them, instantly restoring hit points equal to your Druid level. The guardian vanishes if this effect is used.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Guardian’s Embrace" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_GUARDIANS_EMBRACE">
+		<description>
+			<p><em>14th-level Circle of the Leaf feature</em></p>
+			<p>As a bonus action, you can merge with your Verdant Guardian for 10 minutes. While bonded, you gain the following benefits:</p>
+			<ul>
+				<li>You have resistance to all damage.</li>
+				<li>The Verdant Guardian’s aura also grants your Keeper of the Wild enhancements to your allies:
+					<ul>
+						<li>Tread Softly: You and your allies can move through nonmagical difficult terrain within the aura without expending extra movement and leave no trace of your passage.</li>
+						<li>Heart of the Wild: You and your allies within the aura gain advantage on saving throws against being charmed by fey and beasts.</li>
+					</ul>
+				</li>
+				<li>Uses per Day: You can use this feature a number of times equal to your proficiency bonus per long rest.</li>
+			</ul>
+		</description>
+	</element>
+</elements>

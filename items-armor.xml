@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Armor</name>
+		<description></description>
+		<author>Homebrew</author>
+		<update version="1.0.0">
+			<file name="items-armor.xml" url="local-only"/>
+		</update>
+	</info>
+
+	<element name="Elven Mail" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_ELVEN_MAIL">
+		<description>
+			<p>This finely crafted elven armor does not limit your Dexterity bonus to AC. In addition, you gain a +2 bonus to all saving throws while wearing it.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, heavy</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium or heavy, but not hide">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">(ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY),!Hide</set>
+			<set name="name-format">Elven {{parent}}</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:dexterity:cap" value="7" bonus="base" />
+			<stat name="strength:save:misc" value="2" />
+			<stat name="dexterity:save:misc" value="2" />
+			<stat name="constitution:save:misc" value="2" />
+			<stat name="intelligence:save:misc" value="2" />
+			<stat name="wisdom:save:misc" value="2" />
+			<stat name="charisma:save:misc" value="2" />
+		</rules>
+	</element>
+    <element name="Elven Leather" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_ELVEN_LEATHER">
+        <description>
+            <p>This elven light armor grants the wearer advantage on Stealth checks, a +2 bonus to initiative rolls, and the ability to cast the <em>Shield</em> spell as a reaction (level 1, recharges on a short rest).</p>
+            <ul>
+                <li><b>Advantage on Stealth checks.</b></li>
+                <li><b>Shield (Reaction):</b> Cast as a level 1 spell (Recharge: Short rest.)</li>
+                <li><b>Ambusher:</b> Gain a +2 bonus to Initiative Rolls</li>
+            </ul>
+            <div class="reference">
+				<div element="ID_PHB_SPELL_SHIELD" />
+			</div>
+        </description>
+        <setters>
+            <set name="keywords">light, stealth</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT,!Chain</set>
+            <set name="name-format">Elven {{parent}}</set>
+        </setters>
+        <rules>
+            <stat name="initiative" value="2" />
+        </rules>
+    </element>
+    <element name="Ironvine Shield" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_IRONVINE_SHIELD">
+        <description>
+            <p>Ironvine Shield is an uncommon Shield that damages the attacker if the wielder is using a weapon empowered with Shillelagh.</p>
+            <p>While the wielder is holding a weapon empowered with Shillelagh , and when they are hit by a melee attack, the attacker takes Piercing Damage equal to the wielder's Wisdom modifier.</p>
+        </description>
+        <setters>
+			<set name="keywords">shield</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="name-format">Ironvine {{parent}}</set>
+        </setters>
+    </element>
+
+</elements>

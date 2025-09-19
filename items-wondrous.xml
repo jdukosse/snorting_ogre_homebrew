@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wondrous Items</name>
+		<description></description>
+		<author>Homebrew</author>
+		<update version="1.0.0">
+			<file name="items-wondrous.xml" url="local-only"/>
+		</update>
+	</info>
+	<element name="Gloves of Beligerent Skies" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_GLOVES_OF_BELIGERENT_SKIES">
+		<description>
+			<p>When the wearer deals Thunder, Lightning, or Radiant damage, the target takes an extra 1d4 Thunder damage and must succeed on a DC 10 Constitution saving throw or fall prone.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+    <element name="Wapira's Crown" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_WAPIRAS_CROWN">
+        <description>
+            <p>Legends say a Giant Elk and a druid once formed a powerful friendship. When the Elk laid down his life for the druid, she crafted this helmet in honour of her beloved friend, so his beauty and compassion would live on forever.</p>
+            <ul>
+                <li><b>High Spellcasting:</b> You gain a +1 bonus to Spell Save DC.</li>
+                <li><b>Seldom Caught Unawares:</b> You gain a +1 bonus to Initiative rolls.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">head</set>
+            <set name="type">Helm</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+			<stat name="spellcasting:dc" value="1" />
+            <stat name="initiative" value="1" />
+        </rules>
+    </element>
+</elements>

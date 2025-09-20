@@ -22,4 +22,22 @@
 			<set name="name-format">{{parent}} of the Banshee</set>
 		</setters>
 	</element>
+	<element name="Detachable Head" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SO_MAGIC_ITEM_MODULAR_QUARTERSTAFF">
+		<description>
+			<p>This simple quarterstaff can be combined with its separate head by using a free action and speaking its command word. The weapon is magical for purposes of overcoming damage reduction.</p>
+			<p class="indent"><strong>Transformation:</strong> As a free action, you can speak the command word to attach or detach the weapon head, transforming this quarterstaff into a {{parent}} or back into a quarterstaff. The weapon retains its magical properties in any form.</p>
+			<p class="indent"><strong>Magical Weapon:</strong> Attack and damage rolls made with this weapon are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any polearm or spear">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SPEARS||Glaive||Halberd||Pike</set>
+			<set name="attunement">false</set>
+			<set name="name-format">Detachable {{parent}}</set>
+		</setters>
+		<rules>
+			<stat name="enhancement" value="0" bonus="enhancement" />
+		</rules>
+	</element>
 </elements>

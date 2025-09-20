@@ -12,7 +12,8 @@
 		<setters>
 			<set name="abbreviation">SOH</set>
 			<set name="url">https://github.com/jdukosse/snorting_ogre_homebrew</set>
-			<set name="author" abbreviation="SO" url="none">jdukosse</set>
+			<set name="image">https://github.com/jdukosse/snorting_ogre_homebrew/main/snorting-ogre.png</set>
+			<set name="author" abbreviation="JDU" url="https://github.com/jdukosse">jdukosse</set>
 			<set name="official">false</set>
 			<set name="supplement">true</set>
 			<set name="release">20250919</set>

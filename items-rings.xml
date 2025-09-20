@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Rings</name>
-    <description></description>
+    <description>Rings from Snorting Ogre Homebrew</description>
     <author>jdukosse</author>
     <update version="1.0.0">
       <file name="items-rings.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-rings.xml" />

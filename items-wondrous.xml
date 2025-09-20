@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Wondrous Items</name>
-		<description></description>
+		<description>Wondrous Items from Snorting Ogre Homebrew</description>
 		<author>jdukosse</author>
 		<update version="1.0.0">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-wondrous.xml" />

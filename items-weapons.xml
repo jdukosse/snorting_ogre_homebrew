@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons</name>
-		<description></description>
+		<description>Weapons from Snorting Ogre Homebrew</description>
 		<author>jdukosse</author>
 		<update version="1.0.0">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-weapons.xml" />

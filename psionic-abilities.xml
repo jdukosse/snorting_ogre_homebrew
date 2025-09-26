@@ -17,8 +17,8 @@
 		</description>
         <sheet display="false" />
 		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_SOLO"/>
 			<select type="Feat Feature" name="Psionic Ability (Psionic Initiate)" supports="Psionic Initiate Power Ability" />
-			<select type="Spell" name="Minor Power (Psionic Initiate)" supports="$(spellcasting:list),1" number="2" spellcasting="Psionic" />
 		</rules>
 	</element>
     <element name="Intelligence" type="Feat Feature" source="Snorting Ogre Homebrew" id="ID_SO_FEAT_PSIONIC_INITIATE_INTELLIGENCE">
@@ -37,8 +37,10 @@
 			<list>Psionic</list>
 		</spellcasting>
 		<rules>
-			<stat name="power_points" value="proficiency" />
+			<stat name="power_points" value="proficiency" bonus="power_points"/>
 			<stat name="power_points" value="intelligence:modifier" />
+			<stat name="psionic:spellcasting:slots:1" value="power_points" />
+			<select type="Spell" name="Minor Power (Psionic Initiate)" supports="$(spellcasting:list),1" number="2" spellcasting="Psionic" />
 		</rules>
 	</element>
 	<element name="Wisdom" type="Feat Feature" source="Snorting Ogre Homebrew" id="ID_SO_FEAT_PSIONIC_INITIATE_WISDOM">
@@ -59,6 +61,8 @@
 		<rules>
 			<stat name="power_points" value="proficiency" />
 			<stat name="power_points" value="wisdom:modifier" />
+			<stat name="psionic:spellcasting:slots:1" value="power_points" />
+			<select type="Spell" name="Minor Power (Psionic Initiate)" supports="$(spellcasting:list),1" number="2" spellcasting="Psionic" />
 		</rules>
 	</element>
 	<element name="Charisma" type="Feat Feature" source="Snorting Ogre Homebrew" id="ID_SO_FEAT_PSIONIC_INITIATE_CHARISMA">
@@ -79,6 +83,8 @@
 		<rules>
 			<stat name="power_points" value="proficiency" />
 			<stat name="power_points" value="charisma:modifier" />
+			<stat name="psionic:spellcasting:slots:1" value="power_points" />
+			<select type="Spell" name="Minor Power (Psionic Initiate)" supports="$(spellcasting:list),1" number="2" spellcasting="Psionic" />
 		</rules>
 	</element>
     <element name="Psionic Initiate" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_PSIONIC_INITIATE">
@@ -103,6 +109,7 @@
     <!--Stomp-->
     <element name="Stomp" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_STOMP">
 		<supports>Psionic, Spell Saving Throw</supports>
+		<requirements>ID_SO_FEAT_PSIONIC_INITIATE</requirements>
 		<description>
 			<p>Your foot stomp precipitates a psychokinetic shock wave that travels 10 ft along the ground, toppling creatures and loose objects. The shock wave affects only creatures standing on the ground within the power's area. All creatures in the area must make a Strength saving throw or be thrown to the ground, become prone, and take 1d4 points of bludgeoning damage.</p>
             <p><strong>Point Cost:</strong> 1</p>
@@ -127,6 +134,7 @@
     <!--Body Equilibrium-->
     <element name="Body Equilibrium" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_BODY_EQUILIBRIUM">
 		<supports>Psionic</supports>
+		<requirements>ID_SO_FEAT_PSIONIC_INITIATE</requirements>
 		<description>
 			<p>You can adjust your body's equilibrium to correspond with any solid or liquid that you stand on. Thus, you can walk on water, quicksand, or even a spider's web without sinking or breaking through (this effect does not confer any resistance to particularly sticky webs). You can move at your normal speed, but you cannot run on an unfirm surface without sinking or breaking through.</p>
 			<p class="indent">If you fall from any height while using this power, damage from the impact is halved.</p>
@@ -152,6 +160,7 @@
     <!--Burst-->
     <element name="Burst" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_BURST">
 		<supports>Psionic</supports>
+		<requirements>ID_SO_FEAT_PSIONIC_INITIATE</requirements>
 		<description>
 			<p>This power increases your movement speed by 10 feet.</p>
             <p><strong>Point Cost:</strong> 1</p>
@@ -176,6 +185,7 @@
     <!--Energy Push-->
     <element name="Energy Push" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_ENERGY_PUSH">
 		<supports>Psionic, Spell Attack</supports>
+		<requirements>ID_SO_FEAT_PSIONIC_INITIATE</requirements>
 		<description>
 			<p>You project a solid blast of energy of the chosen type at a target, dealing it 2d6 points of damage and push the target 10 feet back.</p>
             <p><strong>Point Cost:</strong> 2</p>
@@ -200,6 +210,7 @@
     <!--Force Screen-->
     <element name="Force Screen" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_FORCE_SCREEN">
 		<supports>Psionic</supports>
+		<requirements>ID_SO_FEAT_PSIONIC_INITIATE</requirements>
 		<description>
 			<p>You create an invisible mobile disk of force that hovers in front of you. The force screen provides a +4 shield bonus to Armor Class. Since it hovers in front of you, the effect only helps against attacks that are frontal.</p>
             <p><strong>Point Cost:</strong> 2</p>
@@ -224,6 +235,7 @@
     <!--Dimension Swap-->
     <element name="Dimension Swap" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_DIMENSION_SWAP">
 		<supports>Psionic</supports>
+		<requirements>ID_SO_FEAT_PSIONIC_INITIATE</requirements>
 		<description>
 			<p>You instantly swap positions between your current position and that of a designated ally in range. Alternatively, you can swap the positions of any two allies in range. This power affects creatures of Large or smaller size. You can bring along objects, but no other creatures.</p>
             <p><strong>Point Cost:</strong> 2</p>
@@ -248,6 +260,7 @@
     <!--Inertial Armor-->
     <element name="Inertial Armor" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_INERTIAL_ARMOR">
 		<supports>Psionic</supports>
+		<requirements>ID_SO_FEAT_PSIONIC_INITIATE</requirements>
 		<description>
 			<p>Your mind generates a tangible field of force that provides a +4 armor bonus to Armor Class. Unlike mundane armor, inertial armor entails no armor check penalty or speed reduction. Because inertial armor is composed of psychokinetic force, incorporeal creatures can't bypass it the way they do normal armor.</p>
 			<p>Your inertial armor can be invisible or can appear as a coloured glow, at your option.</p>
@@ -273,6 +286,7 @@
     <!--Wall Walker-->
     <element name="Wall Walker" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_WALL_WALKER">
 		<supports>Psionic</supports>
+		<requirements>ID_SO_FEAT_PSIONIC_INITIATE</requirements>
 		<description>
 			<p>You gain the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You also gain a climbing speed equal to your walking speed. Because of the need to keep at least one foot in contact with the wall or ceiling at all times, you cannot jump.</p>
             <p><strong>Point Cost:</strong> 2</p>
@@ -297,6 +311,7 @@
     <!--Missive-->
     <element name="Missive" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_MISSIVE">
 		<supports>Psionic</supports>
+		<requirements>ID_SO_FEAT_PSIONIC_INITIATE</requirements>
 		<description>
 			<p>You send a telepathic message to a single living creature within range. If you do not share a common language, the subject "hears" meaningless mental syllables. If the creature has also psionic abilities it can answer.</p>
             <p><strong>Point Cost:</strong> 1</p>
@@ -321,6 +336,7 @@
     <!--Psionic Blast-->
     <element name="Psionic Blast" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_PSIONIC_BLAST">
 		<supports>Psionic, Spell Saving Throw</supports>
+		<requirements>ID_SO_FEAT_PSIONIC_INITIATE</requirements>
 		<description>
 			<p>The air ripples with the force of your mental attack, which blasts the minds of all creatures in range. Creatures in the blast must make a Wisdom save or be stunned until the end of your next round.</p>
             <p><strong>Point Cost:</strong> 2</p>

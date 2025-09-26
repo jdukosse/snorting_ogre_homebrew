@@ -104,7 +104,7 @@
     <element name="Stomp" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_STOMP">
 		<supports>Psionic, Spell Saving Throw</supports>
 		<description>
-			<p>Your foot stomp precipitates a psychokinetic shock wave that travels along the ground, toppling creatures and loose objects. The shock wave affects only creatures standing on the ground within the power's area. Creatures that fail their saves are thrown to the ground, become prone, and take 1d4 points of bludgeoning damage.</p>
+			<p>Your foot stomp precipitates a psychokinetic shock wave that travels 10 ft along the ground, toppling creatures and loose objects. The shock wave affects only creatures standing on the ground within the power's area. All creatures in the area must make a Strength saving throw or be thrown to the ground, become prone, and take 1d4 points of bludgeoning damage.</p>
             <p><strong>Point Cost:</strong> 1</p>
 			<p class="indent"><b><i>Augment.</i></b> For every 1 additional power point you spend, the damage increases by 1d4.</p>
         </description>
@@ -155,7 +155,7 @@
 		<description>
 			<p>This power increases your movement speed by 10 feet.</p>
             <p><strong>Point Cost:</strong> 1</p>
-			<p class="indent"><b><i>Augment.</i></b> For every additional power point you spend, the speed increases by another 5 feet.</p>
+			<p class="indent"><b><i>Augment.</i></b> For every 1 additional power point you spend, the speed increases by another 5 feet.</p>
         </description>
 		<setters>
 			<set name="keywords">utility, movement</set>
@@ -164,6 +164,175 @@
 			<set name="time">1 bonus action</set>
 			<set name="duration">1 round</set>
 			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <!--Energy Push-->
+    <element name="Energy Push" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_ENERGY_PUSH">
+		<supports>Psionic, Spell Attack</supports>
+		<description>
+			<p>You project a solid blast of energy of the chosen type at a target, dealing it 2d6 points of damage and push the target 10 feet back.</p>
+            <p><strong>Point Cost:</strong> 2</p>
+			<p class="indent"><b><i>Augment.</i></b> For every 2 additional power points you spend, this power's damage increases by one die (d6) and the target is pushed an additional 5 feet back.</p>
+        </description>
+		<setters>
+			<set name="keywords">damage, force</set>
+			<set name="level">1</set>
+			<set name="school">Psionic</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <!--Force Screen-->
+    <element name="Force Screen" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_FORCE_SCREEN">
+		<supports>Psionic</supports>
+		<description>
+			<p>You create an invisible mobile disk of force that hovers in front of you. The force screen provides a +4 shield bonus to Armor Class. Since it hovers in front of you, the effect only helps against attacks that are frontal.</p>
+            <p><strong>Point Cost:</strong> 2</p>
+			<p class="indent"><b><i>Augment.</i></b> For every 1 additional power point you spend, the duration increases by 1 round.</p>
+        </description>
+		<setters>
+			<set name="keywords">defensive, force</set>
+			<set name="level">1</set>
+			<set name="school">Psionic</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 round</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <!--Dimension Swap-->
+    <element name="Dimension Swap" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_DIMENSION_SWAP">
+		<supports>Psionic</supports>
+		<description>
+			<p>You instantly swap positions between your current position and that of a designated ally in range. Alternatively, you can swap the positions of any two allies in range. This power affects creatures of Large or smaller size. You can bring along objects, but no other creatures.</p>
+            <p><strong>Point Cost:</strong> 2</p>
+			<p class="indent"><b><i>Augment.</i></b> For every 1 additional power point you spend, the range increases by 10 feet.</p>
+        </description>
+		<setters>
+			<set name="keywords">teleportation, utility</set>
+			<set name="level">1</set>
+			<set name="school">Psionic</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">25 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <!--Inertial Armor-->
+    <element name="Inertial Armor" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_INERTIAL_ARMOR">
+		<supports>Psionic</supports>
+		<description>
+			<p>Your mind generates a tangible field of force that provides a +4 armor bonus to Armor Class. Unlike mundane armor, inertial armor entails no armor check penalty or speed reduction. Because inertial armor is composed of psychokinetic force, incorporeal creatures can't bypass it the way they do normal armor.</p>
+			<p>Your inertial armor can be invisible or can appear as a coloured glow, at your option.</p>
+            <p><strong>Point Cost:</strong> 2</p>
+			<p class="indent"><b><i>Augment.</i></b> For every 2 additional power points you spend, the AC increases by 1.</p>
+        </description>
+		<setters>
+			<set name="keywords">defensive, force</set>
+			<set name="level">1</set>
+			<set name="school">Psionic</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <!--Wall Walker-->
+    <element name="Wall Walker" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_WALL_WALKER">
+		<supports>Psionic</supports>
+		<description>
+			<p>You gain the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You also gain a climbing speed equal to your walking speed. Because of the need to keep at least one foot in contact with the wall or ceiling at all times, you cannot jump.</p>
+            <p><strong>Point Cost:</strong> 2</p>
+			<p class="indent"><b><i>Augment.</i></b> For every additional power point you spend, the duration increases by 1 minute.</p>
+        </description>
+		<setters>
+			<set name="keywords">utility, movement</set>
+			<set name="level">1</set>
+			<set name="school">Psionic</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <!--Missive-->
+    <element name="Missive" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_MISSIVE">
+		<supports>Psionic</supports>
+		<description>
+			<p>You send a telepathic message to a single living creature within range. If you do not share a common language, the subject "hears" meaningless mental syllables. If the creature has also psionic abilities it can answer.</p>
+            <p><strong>Point Cost:</strong> 1</p>
+			<p class="indent"><b><i>Augment.</i></b> For every 1 additional power point you spend you can target another creature.</p>
+        </description>
+		<setters>
+			<set name="keywords">telepathy, communication</set>
+			<set name="level">1</set>
+			<set name="school">Psionic</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <!--Psionic Blast-->
+    <element name="Psionic Blast" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_PSIONIC_BLAST">
+		<supports>Psionic, Spell Saving Throw</supports>
+		<description>
+			<p>The air ripples with the force of your mental attack, which blasts the minds of all creatures in range. Creatures in the blast must make a Wisdom save or be stunned until the end of your next round.</p>
+            <p><strong>Point Cost:</strong> 2</p>
+			<p class="indent"><b><i>Augment.</i></b> For every 2 additional power points you spend the cone's range increases by 10 feet.</p>
+        </description>
+		<setters>
+			<set name="keywords">mental, stunning</set>
+			<set name="level">1</set>
+			<set name="school">Psionic</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (30-foot cone)</set>
 			<set name="hasVerbalComponent">false</set>
 			<set name="hasSomaticComponent">false</set>
 			<set name="hasMaterialComponent">false</set>

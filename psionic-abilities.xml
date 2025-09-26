@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Psionic Abilities</name>
+		<description>Psionic Abilities from the Infected campaign in Snorting Ogre Homebrew</description>
+		<author url="https://github.com/jdukosse/snorting_ogre_homebrew">jdukosse</author>
+		<update version="0.0.1">
+			<file name="psionic-abilities.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/psionic-abilities.xml" />
+		</update>
+	</info>
+    <!--Psionic Initiate Feat-->
+    <element name="Psionic Initiate" type="Feat" source="Snorting Ogre Homebrew" id="ID_SO_FEAT_PSIONIC_INITIATE">
+		<supports>Psionic</supports>
+		<description>
+			<p>The parasite living in your brain has granted you limited access to psionic abilities.</p>
+            <p>You gain a number of psionic Power Points equal to your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this feat) modifier. You can spend these points to manifest psionic powers that you know.</p>
+		</description>
+        <sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Psionic Ability (Psionic Initiate)" supports="Psionic Initiate Power Ability" />
+		</rules>
+	</element>
+    <element name="Intelligence" type="Feat Feature" source="Snorting Ogre Homebrew" id="ID_SO_FEAT_PSIONIC_INITIATE_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Psionic Initiate Power Ability</supports>
+		<description>
+			<p>Your governing ability for your psionic powers is Intelligence. You gain Power Points equal to your Proficiency Bonus plus your Intelligence modifier</p>
+		</description>
+		<sheet alt="Psionic Initiate">
+			<description>
+				<p>The parasite living in your brain has granted you limited access to psionic abilities.</p>
+				<p class="indent"><b><i>Power Points:</i></b> {{power_points}}</p>
+			</description>
+		</sheet>
+		<spellcasting name="Psionic" ability="Intelligence" allowReplace="true">
+			<list>Psionic</list>
+		</spellcasting>
+		<rules>
+			<stat name="power_points" value="proficiency" />
+			<stat name="power_points" value="intelligence:modifier" />
+			<select type="Spell" name="Minor Power (Psionic Initiate)" supports="$(spellcasting:list),1" number="2" spellcasting="Psionic" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Snorting Ogre Homebrew" id="ID_SO_FEAT_PSIONIC_INITIATE_WISDOM">
+		<compendium display="false" />
+		<supports>Psionic Initiate Power Ability</supports>
+		<description>
+			<p>Your governing ability for your psionic powers is Wisdom. You gain Power Points equal to your Proficiency Bonus plus your Wisdom modifier</p>
+		</description>
+		<sheet alt="Psionic Initiate">
+			<description>
+				<p>The parasite living in your brain has granted you limited access to psionic abilities.</p>
+				<p class="indent"><b><i>Power Points:</i></b> {{power_points}}</p>
+			</description>
+		</sheet>
+		<spellcasting name="Psionic" ability="Wisdom" allowReplace="true">
+			<list>Psionic</list>
+		</spellcasting>
+		<rules>
+			<stat name="power_points" value="proficiency" />
+			<stat name="power_points" value="wisdom:modifier" />
+			<select type="Spell" name="Minor Power (Psionic Initiate)" supports="$(spellcasting:list),1" number="2" spellcasting="Psionic" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Snorting Ogre Homebrew" id="ID_SO_FEAT_PSIONIC_INITIATE_CHARISMA">
+		<compendium display="false" />
+		<supports>Psionic Initiate Power Ability</supports>
+		<description>
+			<p>Your governing ability for your psionic powers is Charisma. You gain Power Points equal to your Proficiency Bonus plus your Charisma modifier</p>
+		</description>
+		<sheet alt="Psionic Initiate">
+			<description>
+				<p>The parasite living in your brain has granted you limited access to psionic abilities.</p>
+				<p class="indent"><b><i>Power Points:</i></b> {{power_points}}</p>
+			</description>
+		</sheet>
+		<spellcasting name="Psionic" ability="Charisma" allowReplace="true">
+			<list>Psionic</list>
+		</spellcasting>
+		<rules>
+			<stat name="power_points" value="proficiency" />
+			<stat name="power_points" value="charisma:modifier" />
+			<select type="Spell" name="Minor Power (Psionic Initiate)" supports="$(spellcasting:list),1" number="2" spellcasting="Psionic" />
+		</rules>
+	</element>
+    <element name="Psionic Initiate" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_PSIONIC_INITIATE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SO_FEAT_PSIONIC_INITIATE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Psionic Abilities</set>
+			<set name="keywords">psionic, feat</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_SO_FEAT_PSIONIC_INITIATE"/>
+		</rules>
+    </element>
+
+    <!--Stomp-->
+    <element name="Stomp" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_STOMP">
+		<supports>Psionic, Spell Saving Throw</supports>
+		<description>
+			<p>Your foot stomp precipitates a psychokinetic shock wave that travels along the ground, toppling creatures and loose objects. The shock wave affects only creatures standing on the ground within the power's area. Creatures that fail their saves are thrown to the ground, become prone, and take 1d4 points of bludgeoning damage.</p>
+            <p><strong>Point Cost:</strong> 1</p>
+			<p class="indent"><b><i>Augment.</i></b> For every 1 additional power point you spend, the damage increases by 1d4.</p>
+        </description>
+		<setters>
+			<set name="keywords">bludgeoning</set>
+			<set name="level">1</set>
+			<set name="school">Psionic</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <!--Body Equilibrium-->
+    <element name="Body Equilibrium" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_BODY_EQUILIBRIUM">
+		<supports>Psionic</supports>
+		<description>
+			<p>You can adjust your body's equilibrium to correspond with any solid or liquid that you stand on. Thus, you can walk on water, quicksand, or even a spider's web without sinking or breaking through (this effect does not confer any resistance to particularly sticky webs). You can move at your normal speed, but you cannot run on an unfirm surface without sinking or breaking through.</p>
+			<p class="indent">If you fall from any height while using this power, damage from the impact is halved.</p>
+            <p><strong>Point Cost:</strong> 2</p>
+			<p class="indent"><b><i>Augment.</i></b> For every 2 additional power points you spend, the duration increases by 1 minute.</p>
+        </description>
+		<setters>
+			<set name="keywords">utility, movement</set>
+			<set name="level">1</set>
+			<set name="school">Psionic</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute per level</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>

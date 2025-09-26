@@ -149,4 +149,28 @@
 		</setters>
 	</element>
 
+    <!--Burst-->
+    <element name="Burst" type="Spell" source="Snorting Ogre Homebrew" id="ID_SO_SPELL_BURST">
+		<supports>Psionic</supports>
+		<description>
+			<p>This power increases your movement speed by 10 feet.</p>
+            <p><strong>Point Cost:</strong> 1</p>
+			<p class="indent"><b><i>Augment.</i></b> For every additional power point you spend, the speed increases by another 5 feet.</p>
+        </description>
+		<setters>
+			<set name="keywords">utility, movement</set>
+			<set name="level">1</set>
+			<set name="school">Psionic</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 round</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 </elements>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Optional Class Features</name>
-		<description>Optional Class Features from Snorting Ogre Homebrew</description>
+		<name>Ranger Danger Optional Features</name>
+		<description>Ranger Danger Optional Features from the Ranger Danger campaign in Snorting Ogre Homebrew</description>
 		<author url="https://github.com/jdukosse/snorting_ogre_homebrew">jdukosse</author>
 		<update version="0.0.1">
-			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/optional-class-features.xml" />
+			<file name="ranger-danger-features.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/ranger-danger-features.xml" />
 		</update>
 	</info>
 
@@ -13,7 +13,7 @@
 	<!-- Song of Disruption -->
 	<element name="Song of Disruption" type="Class Feature" source="Snorting Ogre Homebrew" id="ID_SO_CLASS_FEATURE_BARD_SONG_OF_DISRUPTION">
 		<description>
-			<p><i>1st-level bard feature</i></p>
+			<p><i>3rd-level bard feature</i></p>
 			<p>You gain the ability to use the discordant notes you have learned to disrupt another spellcaster. As a reaction you can expend one use of your Bardic Inspiration to counter a spell being cast. Roll your Bardic Inspiration die + 8 against a DC of 10 plus the level of the spell being cast.</p>
 		</description>
 		<sheet action="Reaction" usage="Bardic Inspiration">
@@ -24,7 +24,7 @@
 		</rules>
 	</element>
 
-	<element name="Bard, LV01: Song of Disruption" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_BARD_SONG_OF_DISRUPTION">
+	<element name="Bard, LV03: Song of Disruption" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_BARD_SONG_OF_DISRUPTION">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -33,20 +33,20 @@
 			</div>
 		</description>
 		<setters>
-			<set name="category">Optional Class Features</set>
-			<set name="keywords">first level, 1st level, bardic inspiration, counterspell, reaction</set>
+			<set name="category">Ranger Danger Optional Features</set>
+			<set name="keywords">third level, 3rd level, bardic inspiration, counterspell, reaction</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_BARD_SONG_OF_DISRUPTION" requirements="[level:bard:1]"/>
+			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_BARD_SONG_OF_DISRUPTION" requirements="[level:bard:3]"/>
 		</rules>
 	</element>
 
 	<!-- Song of Suppression -->
 	<element name="Song of Suppression" type="Class Feature" source="Snorting Ogre Homebrew" id="ID_SO_CLASS_FEATURE_BARD_SONG_OF_SUPPRESSION">
 		<description>
-			<p><i>1st-level bard feature</i></p>
+			<p><i>3rd-level bard feature</i></p>
 			<p>By singing the counter melody you learned while studying the box you can briefly suppress any magical effects in an area. For 1 minute all permanent magical effects in a 10 ft area around you are suppressed. You can use this ability a number of times equal to your Charisma modifier per long rest.</p>
 		</description>
 		<sheet usage="{{charisma:modifier}}/Long Rest">
@@ -57,7 +57,7 @@
 		</rules>
 	</element>
 
-	<element name="Bard, LV01: Song of Suppression" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_BARD_SONG_OF_SUPPRESSION">
+	<element name="Bard, LV03: Song of Suppression" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_OCF_BARD_SONG_OF_SUPPRESSION">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -66,13 +66,13 @@
 			</div>
 		</description>
 		<setters>
-			<set name="category">Optional Class Features</set>
-			<set name="keywords">first level, 1st level, suppression, antimagic, area effect</set>
+			<set name="category">Ranger Danger Optional Features</set>
+			<set name="keywords">third level, 3rd level, suppression, antimagic, area effect</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_BARD_SONG_OF_SUPPRESSION" requirements="[level:bard:1]"/>
+			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_BARD_SONG_OF_SUPPRESSION" requirements="[level:bard:3]"/>
 		</rules>
 	</element>
 
@@ -101,7 +101,7 @@
 			</div>
 		</description>
 		<setters>
-			<set name="category">Optional Class Features</set>
+			<set name="category">Ranger Danger Optional Features</set>
 			<set name="keywords">second level, 2nd level, fire damage, temporary hit points, wildfire spirit</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
@@ -136,7 +136,7 @@
 			</div>
 		</description>
 		<setters>
-			<set name="category">Optional Class Features</set>
+			<set name="category">Ranger Danger Optional Features</set>
 			<set name="keywords">third level, 3rd level, beast master, bonus action, multiple creatures, companion</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
@@ -176,7 +176,7 @@
 			</div>
 		</description>
 		<setters>
-			<set name="category">Optional Class Features</set>
+			<set name="category">Ranger Danger Optional Features</set>
 			<set name="keywords">third level, 3rd level, plant growth, healing, ecosystem, sanctuary</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
@@ -210,7 +210,7 @@
 			</div>
 		</description>
 		<setters>
-			<set name="category">Optional Class Features</set>
+			<set name="category">Ranger Danger Optional Features</set>
 			<set name="keywords">third level, 3rd level, swarmkeeper, temporary hit points, kill</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
@@ -244,7 +244,7 @@
 			</div>
 		</description>
 		<setters>
-			<set name="category">Optional Class Features</set>
+			<set name="category">Ranger Danger Optional Features</set>
 			<set name="keywords">third level, 3rd level, swarmkeeper, deception, persuasion, skills</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
@@ -277,7 +277,7 @@
 			</div>
 		</description>
 		<setters>
-			<set name="category">Optional Class Features</set>
+			<set name="category">Ranger Danger Optional Features</set>
 			<set name="keywords">third level, 3rd level, swarmkeeper, gathered swarm, poison damage</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
@@ -310,13 +310,33 @@
 			</div>
 		</description>
 		<setters>
-			<set name="category">Optional Class Features</set>
+			<set name="category">Ranger Danger Optional Features</set>
 			<set name="keywords">seventh level, 7th level, swarmkeeper, writhing tide, teleport, bonus action</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
 			<grant type="Class Feature" id="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_TIDE_STEP" requirements="[level:ranger:7],[ranger:archetype:swarmkeeper]"/>
+		</rules>
+	</element>
+
+	<!-- Feat, Master Brewer-->
+	<element name="Master Brewer, Feat" type="Item" source="Snorting Ogre Homebrew" id="ID_SO_ITEM_FEAT_MASTER_BREWER">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SO_FEAT_MASTER_BREWER" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ranger Danger Optional Features</set>
+			<set name="keywords">feat, master brewer</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_SO_FEAT_MASTER_BREWER"/>
 		</rules>
 	</element>
 

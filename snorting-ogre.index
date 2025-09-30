@@ -16,7 +16,7 @@
 		<file name="items-rings.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-rings.xml" />
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-weapons.xml" />
 		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-wondrous.xml" />
-		<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/optional-class-features.xml" />
+		<file name="ranger-danger-features.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/ranger-danger-features.xml" />
 		<file name="psionic-abilities.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/psionic-abilities.xml" />
 	</files>
 </index>

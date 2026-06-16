@@ -41,13 +41,13 @@
 		</rules>
 	</element>
 	<element name="Blade of Eilistraee" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SOH_MAGIC_ITEM_BLADE_OF_EILISTRAEE">
-		<supports>ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
 		<description>
 			<p>A sacred blade born of moonlight and mercy, blessed by Eilistraee, the Dark Maiden. It is a weapon of grace, not of slaughter. It redeems where others would only destroy.</p>
-			<p class="indent"><strong>Magical Weapon:</strong>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
-			<p class="indent"><strong>Moonlight:</strong>In the dark, the weapon emits soft moonlight when wielded. (15ft normal sight, 15ft dim)</p>
-			<p class="indent"><strong>Symbol of Redemption:</strong>If the wielder were to inflict a killing blow on a creature, he/she may choose to render the creature unconscious instead of killing it.</p>
-			<p class="indent"><strong>Blessing of the Moon:</strong>Once per long rest, the wielder can, as a bonus action, fill the weapon with the power of Eilistraee’s Dance. For 1 minute, the weapon gains the following property:</p>
+			<p class="indent"><strong>Magical Weapon:</strong> You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent"><strong>Moonlight:</strong> In the dark, the weapon emits soft moonlight when wielded. (15ft normal sight, 15ft dim)</p>
+			<p class="indent"><strong>Symbol of Redemption:</strong> If the wielder were to inflict a killing blow on a creature, he/she may choose to render the creature unconscious instead of killing it.</p>
+			<p class="indent"><strong>Blessing of the Moon:</strong> Once per long rest, the wielder can, as a bonus action, fill the weapon with the power of Eilistraee’s Dance. For 1 minute, the weapon gains the following property:</p>
 			<p class="indent">Upon a hit, it deals an extra 1d4 radiant damage.</p>
 			<p class="indent">Against Aberrations and fiends, it then deals an extra 1d6 radiant damage</p>
 		</description>
@@ -59,7 +59,30 @@
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
 			<set name="enhancement">1</set>
-			<set name="weapon">Blade of Eilistraee</set>
+			<set name="weapon">Longsword</set>
 		</setters>
+	</element>
+	<element name="Red Knight's Glaive" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SOH_MAGIC_ITEM_RED_KNIGHTS_GLAIVE">
+		<description>
+			<p>This long glaive has a black steel blade engraved with crimson runes. The weapon radiates a soft reddish glow when danger threatens.</p>
+			<p>The handle is wrapped in dark red leather, and at the top, just below the blade, hangs a red and silver knight chess piece, the holy symbol of the order.</p>
+			<p>This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls.</p>
+			<p>You and any of your companions within 30 feet of you can't be surprised, except when incapacitated by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins.</p>
+			<p>The blade pulsates crimson red when danger is near, even within magical darkness.</p>
+			<p class="indent"><strong>Tactical Insight:</strong> Once per long rest, you can give yourself advantage on a single skill check that requires your leadership.</p>
+			<p class="indent"><strong>Mark of the Red Knight:</strong> Once per long rest when initiative is rolled, you may choose to use this ability to give yourself or an ally +5 on an initiative roll.</p>
+		</description>
+		<setters>
+			<set name="keywords">glaive</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="glaive">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Glaive</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
+		</rules>
 	</element>
 </elements>

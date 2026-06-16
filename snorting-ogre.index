@@ -10,6 +10,7 @@
 	</info>
 	<files>
         <file name="source.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/source.xml" />
+		<file name="companions.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/companions.xml" />
 		<file name="druid-leaf.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/druid-leaf.xml" />
 		<file name="feats.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/feats.xml" />
 		<file name="items-armor.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-armor.xml" />

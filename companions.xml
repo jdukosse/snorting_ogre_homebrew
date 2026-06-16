@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companions</name>
+		<description>Companion creatures from Snorting Ogre Homebrew</description>
+		<author>jdukosse</author>
+		<update version="1.0.0">
+			<file name="companions.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/companions.xml" />
+		</update>
+	</info>
+    <element name="Spirit Bear" type="Companion" source="Snorting Ogre Homebrew" id="ID_SOH_COMPANION_SPIRIT_BEAR">
+		<description />
+		<setters>
+			<set name="strength">16</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">8</set>
+			<set name="ac">13 + PB (natural armor)</set>
+			<set name="hp">5 + five times your level (the bear has a number of Hit Dice [d8s] equal to your level)</set>
+			<set name="speed">40 ft., climb 30 ft.</set>
+			<set name="senses">darkvision 60 ft., passive Perception 11 + PB</set>
+			<set name="languages">understands the languages you speak</set>
+			<set name="type">Beast</set>
+			<set name="size">Medium</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">-</set>
+			<set name="actions">ID_SOH_COMPANION_ACTION_SPIRIT_BEAR_MAUL,ID_SOH_COMPANION_ACTION_SPIRIT_BEAR_ROAR</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:ac" value="proficiency" />
+			<stat name="companion:hp:max" value="5" bonus="base" />
+			<stat name="companion:hp:max" value="level" />
+			<stat name="companion:hp:max" value="level" />
+			<stat name="companion:hp:max" value="level" />
+			<stat name="companion:hp:max" value="level" />
+			<stat name="companion:hp:max" value="level" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:climb" value="30" bonus="base" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+			<grant type="Companion Trait" id="ID_SOH_COMPANION_ACTION_SPIRIT_BEAR_PROFICIENCIES"/>
+		</rules>
+	</element>
+	<element name="Maul" type="Companion Action" source="Snorting Ogre Homebrew" id="ID_SOH_COMPANION_ACTION_SPIRIT_BEAR_MAUL">
+		<description>
+			<p>Melee Weapon Attack: your PB + 3 to hit, reach 5 ft., one target. Hit: 1d8 + 3 + PB slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: your PB + 3 to hit, reach 5 ft., one target. Hit: 1d8 + 3 + PB slashing damage.</description>
+		</sheet>
+	</element>
+	<element name="Protective Roar" type="Companion Action" source="Snorting Ogre Homebrew" id="ID_SOH_COMPANION_ACTION_SPIRIT_BEAR_ROAR">
+		<description>
+			<p>As a reaction, when an enemy is within 10 ft. and attacks you or another ally, the Spirit Bear can make a thunderous roar. The attacker then gets a disadvantage on its attack.</p>
+		</description>
+		<sheet>
+			<description>As a reaction, when an enemy is within 10 ft. And attacks you or another ally, the Spirit Bear can make a thunderous roar. The attacker then gets a disadvantage on its attack. </description>
+		</sheet>
+	</element>
+    <element name="Bear Proficiencies" type="Companion Trait" source="Snorting Ogre Homebrew" id="ID_SOH_COMPANION_ACTION_SPIRIT_BEAR_PROFICIENCIES">
+		<description>
+			<p>You can add your proficiency bonus to any Perception and Athletics check that the bear makes.</p>
+		</description>
+		<sheet display="false">
+			<description>You can add your proficiency bonus to any Perception and Athletics check that the bear makes.</description>
+		</sheet>
+		<rules>
+			<stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+        </rules>
+    </element>
+</elements>

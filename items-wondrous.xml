@@ -8,7 +8,7 @@
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-wondrous.xml" />
 		</update>
 	</info>
-	<element name="Gloves of Beligerent Skies" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_GLOVES_OF_BELIGERENT_SKIES">
+	<element name="Gloves of Beligerent Skies" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SOH_MAGIC_ITEM_GLOVES_OF_BELIGERENT_SKIES">
 		<description>
 			<p>When the wearer deals Thunder, Lightning, or Radiant damage, the target takes an extra 1d4 Thunder damage and must succeed on a DC 10 Constitution saving throw or fall prone.</p>
 		</description>
@@ -22,7 +22,7 @@
 			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
-    <element name="Wapira's Crown" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_WAPIRAS_CROWN">
+    <element name="Wapira's Crown" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SOH_MAGIC_ITEM_WAPIRAS_CROWN">
         <description>
             <p>Legends say a Giant Elk and a druid once formed a powerful friendship. When the Elk laid down his life for the druid, she crafted this helmet in honour of her beloved friend, so his beauty and compassion would live on forever.</p>
             <ul>

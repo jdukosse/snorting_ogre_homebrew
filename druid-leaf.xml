@@ -8,7 +8,7 @@
 			<file name="druid-leaf.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/druid-leaf.xml" />
 		</update>
 	</info>
-	<element name="Circle of the Leaf" type="Archetype" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_DRUID_CIRCLE_OF_LEAF">
+	<element name="Circle of the Leaf" type="Archetype" source="Snorting Ogre Homebrew" id="ID_CUSTOM_ARCHETYPE_DRUID_CIRCLE_OF_LEAF">
 		<supports>Druid Circle</supports>
 		<description>
 			<p>Druids of the Circle of the Leaf embody nature’s patient hand, guiding the wilderness toward harmony without force or destruction. Leaftenders gently shape the wild, coaxing balance through care and wisdom.</p>
@@ -29,7 +29,7 @@
 			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_GUARDIANS_EMBRACE" level="14" />
 		</rules>
 	</element>
-	<element name="Circle Spells" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_CIRCLE_SPELLS">
+	<element name="Circle Spells" type="Archetype Feature" source="Snorting Ogre Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_CIRCLE_SPELLS">
 		<description>
 			<p><em>2nd-level Circle of the Leaf feature</em></p>
 			<p>Starting at 2nd level, you gain access to the following Circle Spells. These spells are always prepared and do not count against the number of spells you can prepare each day.</p>
@@ -53,7 +53,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="9" spellcasting="Druid" prepared="true" />
 		</rules>
 	</element>
-	<element name="Tender of the Green" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_TENDER_OF_THE_GREEN">
+	<element name="Tender of the Green" type="Archetype Feature" source="Snorting Ogre Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_TENDER_OF_THE_GREEN">
 		<description>
 			<p><em>2nd-level Circle of the Leaf feature</em></p>
 			<ul>
@@ -62,7 +62,7 @@
 			</ul>
 		</description>
 	</element>
-	<element name="Verdant Guardian" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_VERDANT_GUARDIAN">
+	<element name="Verdant Guardian" type="Archetype Feature" source="Snorting Ogre Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_VERDANT_GUARDIAN">
 		<description>
 			<p><em>2nd-level Circle of the Leaf feature</em></p>
 			<p>As an action, you expend one use of Wild Shape to summon a Verdant Guardian in an unoccupied space within 30 feet of you. The guardian lasts for 1 hour or until you dismiss it as a bonus action. The guardian is a Medium spectral entity, intangible, and does not occupy its space.</p>
@@ -73,7 +73,7 @@
 			</ul>
 		</description>
 	</element>
-	<element name="Keeper of the Wild" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_KEEPER_OF_THE_WILD">
+	<element name="Keeper of the Wild" type="Archetype Feature" source="Snorting Ogre Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_KEEPER_OF_THE_WILD">
 		<description>
 			<p><em>6th-level Circle of the Leaf feature</em></p>
 			<ul>
@@ -82,7 +82,7 @@
 			</ul>
 		</description>
 	</element>
-	<element name="Shelter of the Grove" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_SHELTER_OF_THE_GROVE">
+	<element name="Shelter of the Grove" type="Archetype Feature" source="Snorting Ogre Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_SHELTER_OF_THE_GROVE">
 		<description>
 			<p><em>10th-level Circle of the Leaf feature</em></p>
 			<p>When you summon your Verdant Guardian, it has the following enhancements:</p>
@@ -92,7 +92,7 @@
 			</ul>
 		</description>
 	</element>
-	<element name="Guardian’s Embrace" type="Archetype Feature" source="Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_GUARDIANS_EMBRACE">
+	<element name="Guardian’s Embrace" type="Archetype Feature" source="Snorting Ogre Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_CIRCLE_OF_LEAF_GUARDIANS_EMBRACE">
 		<description>
 			<p><em>14th-level Circle of the Leaf feature</em></p>
 			<p>As a bonus action, you can merge with your Verdant Guardian for 10 minutes. While bonded, you gain the following benefits:</p>

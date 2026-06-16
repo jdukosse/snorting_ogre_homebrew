@@ -8,7 +8,7 @@
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/items-weapons.xml" />
 		</update>
 	</info>
-	<element name="Bow of the Banshee" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_BOW_OF_THE_BANSHEE">
+	<element name="Bow of the Banshee" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SOH_MAGIC_ITEM_BOW_OF_THE_BANSHEE">
 		<description>
             <p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 			<p class="indent">When you hit a creature with a ranged attack using this weapon, you can force the target to make a DC 15 Wisdom saving throw. On a failed save, the target is Frightened of you until the end of your next turn. In addition, you gain an extra +2 bonus to attack and damage rolls against creatures that are Frightened.</p>
@@ -22,7 +22,7 @@
 			<set name="name-format">{{parent}} of the Banshee</set>
 		</setters>
 	</element>
-	<element name="Detachable Head" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SO_MAGIC_ITEM_MODULAR_QUARTERSTAFF">
+	<element name="Detachable Head" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SOH_MAGIC_ITEM_MODULAR_QUARTERSTAFF">
 		<description>
 			<p>This simple quarterstaff can be combined with its separate head by using a free action and speaking its command word. The weapon is magical for purposes of overcoming damage reduction.</p>
 			<p class="indent"><strong>Transformation:</strong> As a free action, you can speak the command word to attach or detach the weapon head, transforming this quarterstaff into a {{parent}} or back into a quarterstaff. The weapon retains its magical properties in any form.</p>
@@ -39,5 +39,27 @@
 		<rules>
 			<stat name="enhancement" value="0" bonus="enhancement" />
 		</rules>
+	</element>
+	<element name="Blade of Eilistraee" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SOH_MAGIC_ITEM_BLADE_OF_EILISTRAEE">
+		<supports>ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			<p>A sacred blade born of moonlight and mercy, blessed by Eilistraee, the Dark Maiden. It is a weapon of grace, not of slaughter. It redeems where others would only destroy.</p>
+			<p class="indent"><strong>Magical Weapon:</strong>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent"><strong>Moonlight:</strong>In the dark, the weapon emits soft moonlight when wielded. (15ft normal sight, 15ft dim)</p>
+			<p class="indent"><strong>Symbol of Redemption:</strong>If the wielder were to inflict a killing blow on a creature, he/she may choose to render the creature unconscious instead of killing it.</p>
+			<p class="indent"><strong>Blessing of the Moon:</strong>Once per long rest, the wielder can, as a bonus action, fill the weapon with the power of Eilistraee’s Dance. For 1 minute, the weapon gains the following property:</p>
+			<p class="indent">Upon a hit, it deals an extra 1d4 radiant damage.</p>
+			<p class="indent">Against Aberrations and fiends, it then deals an extra 1d6 radiant damage</p>
+		</description>
+		<setters>
+			<set name="keywords">longsword,radiant</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Blade of Eilistraee</set>
+		</setters>
 	</element>
 </elements>

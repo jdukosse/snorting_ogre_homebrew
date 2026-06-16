@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
-	<element name="Elven Mail" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_ELVEN_MAIL">
+	<element name="Elven Mail" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SOH_MAGIC_ITEM_ELVEN_MAIL">
 		<description>
 			<p>This finely crafted elven armor does not limit your Dexterity bonus to AC. In addition, you gain a +2 bonus to all saving throws while wearing it.</p>
 		</description>
@@ -33,7 +33,7 @@
 			<stat name="charisma:save:misc" value="2" />
 		</rules>
 	</element>
-    <element name="Elven Leather" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_ELVEN_LEATHER">
+    <element name="Elven Leather" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SOH_MAGIC_ITEM_ELVEN_LEATHER">
         <description>
             <p>This elven light armor grants the wearer advantage on Stealth checks, a +2 bonus to initiative rolls, and the ability to cast the <em>Shield</em> spell as a reaction (level 1, recharges on a short rest).</p>
             <ul>
@@ -59,7 +59,7 @@
             <stat name="initiative" value="2" />
         </rules>
     </element>
-    <element name="Ironvine Shield" type="Magic Item" source="Homebrew" id="ID_USER_MAGIC_ITEM_IRONVINE_SHIELD">
+    <element name="Ironvine Shield" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SOH_MAGIC_ITEM_IRONVINE_SHIELD">
         <description>
             <p>Ironvine Shield is an uncommon Shield that damages the attacker if the wielder is using a weapon empowered with Shillelagh.</p>
             <p>While the wielder is holding a weapon empowered with Shillelagh , and when they are hit by a melee attack, the attacker takes Piercing Damage equal to the wielder's Wisdom modifier.</p>

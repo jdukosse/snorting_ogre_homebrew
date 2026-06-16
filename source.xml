@@ -5,7 +5,7 @@
 			<file name="source.xml" url="https://raw.githubusercontent.com/jdukosse/snorting_ogre_homebrew/main/source.xml" />
 		</update>
 	</info>
-    <element name="Snorting Ogre Homebrew" type="Source" source="Homebrew" id="ID_SO_SOURCE_HOMEBREW">
+    <element name="Snorting Ogre Homebrew" type="Source" source="Snorting Ogre Homebrew" id="ID_SOH_SOURCE_HOMEBREW">
 		<description>
 			<p><strong>All of the additional created for the campaigns of the Snorting Ogre adventuring groups.</strong></p>
 		</description>

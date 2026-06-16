@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
-	<element name="Master Brewer" type="Feat" source="Snorting Ogre Homebrew" id="ID_SO_FEAT_MASTER_BREWER">
+	<element name="Master Brewer" type="Feat" source="Snorting Ogre Homebrew" id="ID_SOH_FEAT_MASTER_BREWER">
 		<description>
 			<p>Time and effort spent mastering the arts of brewing and distilling has paid off, granting you the following benefits:</p>
 			<ul>

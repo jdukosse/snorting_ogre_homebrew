@@ -73,12 +73,12 @@
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
-            <set name="slot">onehand</set>
+            <set name="slot">misc</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Uncommon</set>
 		</setters>
 		<rules>
-			<select type="Companion" name="Figurine of Wondrous Power" supports="ID_SOH_COMPANION_SPIRIT_BEAR" />
+			<select type="Companion" name="Figurine of Wondrous Power" supports="Figurine" />
 		</rules>
 	</element>
 	<element name="Wraps of Freedom" type="Magic Item" source="Snorting Ogre Homebrew" id="ID_SOH_MAGIC_ITEM_WRAPS_OF_FREEDOM">

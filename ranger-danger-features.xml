@@ -29,7 +29,7 @@
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_SO_CLASS_FEATURE_BARD_SONG_OF_DISRUPTION" />
+				<div element="ID_SOH_CLASS_FEATURE_BARD_SONG_OF_DISRUPTION" />
 			</div>
 		</description>
 		<setters>
@@ -62,7 +62,7 @@
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_SO_CLASS_FEATURE_BARD_SONG_OF_SUPPRESSION" />
+				<div element="ID_SOH_CLASS_FEATURE_BARD_SONG_OF_SUPPRESSION" />
 			</div>
 		</description>
 		<setters>
@@ -97,7 +97,7 @@
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_SO_CLASS_FEATURE_DRUID_WILDFIRE_RESIDUAL_WARMTH" />
+				<div element="ID_SOH_CLASS_FEATURE_DRUID_WILDFIRE_RESIDUAL_WARMTH" />
 			</div>
 		</description>
 		<setters>
@@ -132,7 +132,7 @@
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_SO_CLASS_FEATURE_RANGER_BEASTMASTER_MASTER_OF_PETS" />
+				<div element="ID_SOH_CLASS_FEATURE_RANGER_BEASTMASTER_MASTER_OF_PETS" />
 			</div>
 		</description>
 		<setters>
@@ -172,7 +172,7 @@
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_SO_CLASS_FEATURE_DRUID_LEAF_REVITALIZE" />
+				<div element="ID_SOH_CLASS_FEATURE_DRUID_LEAF_REVITALIZE" />
 			</div>
 		</description>
 		<setters>
@@ -206,7 +206,7 @@
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_BAALZEBULS_BLESSING" />
+				<div element="ID_SOH_CLASS_FEATURE_RANGER_SWARMKEEPER_BAALZEBULS_BLESSING" />
 			</div>
 		</description>
 		<setters>
@@ -240,7 +240,7 @@
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_BEGUILING_INFLUENCE" />
+				<div element="ID_SOH_CLASS_FEATURE_RANGER_SWARMKEEPER_BEGUILING_INFLUENCE" />
 			</div>
 		</description>
 		<setters>
@@ -273,7 +273,7 @@
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_MASTER_OF_THE_SWARM" />
+				<div element="ID_SOH_CLASS_FEATURE_RANGER_SWARMKEEPER_MASTER_OF_THE_SWARM" />
 			</div>
 		</description>
 		<setters>
@@ -306,7 +306,7 @@
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_SO_CLASS_FEATURE_RANGER_SWARMKEEPER_TIDE_STEP" />
+				<div element="ID_SOH_CLASS_FEATURE_RANGER_SWARMKEEPER_TIDE_STEP" />
 			</div>
 		</description>
 		<setters>
@@ -326,7 +326,7 @@
 		<description>
 			<p><i>You can equip this item to "enable" it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_SO_FEAT_MASTER_BREWER" />
+				<div element="ID_SOH_FEAT_MASTER_BREWER" />
 			</div>
 		</description>
 		<setters>
